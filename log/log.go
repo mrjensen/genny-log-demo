@@ -11,3 +11,8 @@ var logger = log.NewJSONLogger(os.Stderr)
 func Debug(args ...interface{}) {
 	logger.Log("Debug: ", args)
 }
+
+type Dummy struct {
+	Id string
+	// Add more here
+}
